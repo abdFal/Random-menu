@@ -1,15 +1,22 @@
-# Random-menu
-Random Menu is a Python script that generates a random menu of dishes and assigns them to courses (appetizer, main course, dessert). It uses a CSV file of dishes as input and randomly selects a number of dishes for each course.
+# Random Menu Generator
+This program generates a random list of food or drinks for those who are unsure of what to eat or drink. The menu consists of a list of fruits, vegetables, nuts, grains, beverages, and other food items.
 
-# Usage
-To use Random Menu, you will need Python 3 and the Pandas library installed. Once you have these dependencies installed, you can run the script from the command line:
+## Getting Started
+To use this program, simply run the makanan_minuman_random function and specify the number of food or drink items you would like to generate. The function will randomly select items from the menu list and generate a string that lists the items. The first letter of each item will be capitalized.
 
-#Copy code
-python random_menu.py dishes.csv
-Replace dishes.csv with the path to your own CSV file of dishes.
+You can also add or remove items from the menu list if you wish to customize the list of food or drink items.
 
-# Contributing
-If you would like to contribute to Random Menu, please fork this repository and submit a pull request. We welcome contributions of all kinds, including bug fixes, new features, and documentation improvements.
+## Usage
+To use the program:
 
-# License
-Random Menu is released under the MIT License. See LICENSE for details.
+Run the program using the command python random_menu.py in the command line or terminal.
+When prompted, answer with y if you would like the program to generate a random list of food or drink items, or answer with n if you do not.
+If you answered y, the program will generate a random list of food or drink items and display it.
+You can also add or remove items from the menu list by answering with add or remove when prompted.
+
+#### Example Output
+Bingung Mau Makan/Minum Apa? (y/n), atau mau nambah menu apa? (add/remove) y
+Cobain Makan Atau Minum Ini Deh: Semangka Almond Jus
+
+## License
+This program is licensed under the MIT License. See the LICENSE file for details.

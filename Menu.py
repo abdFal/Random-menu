@@ -1,7 +1,16 @@
 import random
 import string
 
-menu = ["apel ", "pisang ", "ceri ", "jeruk ", "peach ", "pir ", "plum ", "anggur ", "semangka ", "nanas ", "lemon ", "jeruk nipis ", "kiwi ", "blueberry ", "raspberry ", "strawberry ", "blackberry ", "aprikot ", "mangga ", "papaya ", "jambu biji ", "fig ", "kurma ", "kelapa ", "alpukat ", "kacang tanah ", "kacang almond ", "kacang mete ", "kacang walnut ", "kacang filbert ", "kacang macadamia ", "kenari ", "pistachio ", "kayu manis ", "jahe ", "bawang putih ", "bawang bombay ", "tomat ", "kentang ", "wortel ", "selery ", "brokoli ", "kembang kol ", "bayam ", "kale ", "selada ", "mentimun ", "zucchini ", "terong ", "lada ", "jamur ", "kacang ", "kacang polong ", "jagung ", "beras ", "pasta ", "roti ", "keju ", "yogurt ", "susu ", "kopi ", "teh ", "air ", "jus ", "soda ", "bir ", "anggur merah "]
+makanan = [
+        "apel", "pisang", "ceri", "jeruk", "peach", "pir", "plum", "anggur", "semangka", "nanas", "lemon", "jeruk nipis", "kiwi", "blueberry", "raspberry", "strawberry", "blackberry", "aprikot", "mangga", "papaya", "jambu biji", "fig", "kurma", "kentang", "wortel", "selery", "brokoli", "kembang kol", "bayam", "kale", "selada", "mentimun", "zucchini", "terong", "lada", "jamur", "kacang", "kacang polong", "jagung", "roti", "keju"
+    ]
+
+minuman = [
+            "kacang tanah", "kacang almond", "kacang mete", "kacang walnut", "kacang filbert", "kacang macadamia", "kenari", "pistachio", "kayu manis", "jahe", "bawang putih", "bawang bombay", "tomat", "susu", "kopi", "teh", "air", "jus", "soda", "bir", "anggur merah"
+        ]
+
+menu = makanan + minuman
+
 
 def makanan_minuman_random(num_words):
     
@@ -40,7 +49,7 @@ def generate_pairing(menu):
 while True:
     answer = input("Bingung Mau Makan/Minum Apa? (y/n), atau mau nambah menu apa? (add/remove) ")
     if answer.lower() == "y":
-        print("Cobain Makan Atau Minum Ini Deh: " + makanan_minuman_random(1))
+        print("Cobain Ini Deh, enak tww: " + makanan_minuman_random(1))
         print("Atau cobain kombinasi ini: " + generate_pairing(menu))
         break
     elif answer.lower() == "n":
